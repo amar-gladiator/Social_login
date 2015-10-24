@@ -10,12 +10,14 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   pool: 5
-  username: root
-  password: root
-  socket: /var/run/mysqld/mysqld.sock
+  username: neosoft
+  # host: 10.0.30.80
+  # port: 3306
+  password: mypass
+
 
 development:
   <<: *default
@@ -50,5 +52,5 @@ test:
 production:
   <<: *default
   database: demo_production
-  username: demo
-  password: <%= ENV['DEMO_DATABASE_PASSWORD'] %>
+  username: neosofy
+  password: mypass
