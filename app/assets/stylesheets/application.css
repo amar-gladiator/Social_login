@@ -12,18 +12,11 @@
  *
  *= require bootstrap.min
  *= require_tree .
+ *= require font-awesome
  *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
  *= require_self
  */
-.flash {
-    position: fixed;
-    top: 0;
-    background-color:#8FBC8F;
-    height:30px;
-    width: 1200px;
-    left: 5%;
-    right: 10%;
-}
+
 
 .glyphicon-pencil{
 	color: #8FBC8F;
@@ -33,4 +26,7 @@
 .glyphicon-trash{
 	color: red;
 	font-size: 25px;
+}
+.sign_up{
+    margin-top: 10px;
 }

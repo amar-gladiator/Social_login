@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+ <p class="notice"></p>
+ <p class="alert"></p>
+  <%= render partial: "layouts/flash_messages", flash: flash %>
+ <%if user_signed_in?%>
+   <%= render 'layouts/navbar'%>
+<%end%>
 <%= yield %>
-
 </body>
 </html>

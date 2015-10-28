@@ -19,10 +19,9 @@
 //= require_tree .
 
 
-
 $('document').ready(function(){
     setTimeout(function(){
-    	$('.flash').slideUp();
+    	$('.alert').fadeOut();
     }, 3000);
 });
 

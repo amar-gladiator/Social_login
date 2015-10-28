@@ -5,6 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 gem 'rake'
 gem 'passenger'
+gem 'omniauth'
+gem 'omniauth-facebook', '~> 1.4.1'
+gem 'omniauth-twitter'
+gem "omniauth-google-oauth2"
+gem 'pry'
+gem "font-awesome-rails"
 # Use sqlite3 as the database for Active Record
 gem 'pg' #,'~> 0.3.18'
 # Use SCSS for stylesheets
@@ -18,8 +24,10 @@ gem 'therubyracer'#, platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'devise'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'bootstrap_form'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'rspec-rails'
